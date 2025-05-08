@@ -1,5 +1,8 @@
 import AddStudent from './components/AddStudent';
 import SearchStudent from './components/SearchStudent';
+import UpdStudent from './components/UpdStudent';
+import RemoveStudent from './components/RemoveStudent';
+
 import "./App.css";
 
 function App() {
@@ -7,7 +10,9 @@ function App() {
     <div style={{ padding: "2rem" }}>
       <h1>K-Academy Manager</h1>
       <AddStudent/> 
-      <SearchStudent />
+      <SearchStudent/>
+      <UpdStudent/>
+      <RemoveStudent/>
     </div>
   );
 }

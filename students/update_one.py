@@ -7,7 +7,7 @@ def update_one(std_no) :
     print(f"std_no: {std_no}")
     data = request.get_json()
 
-    print(data)
+    print("이거찍히냐", data)
     std_nm = data.get("std_nm")
     bday = data.get("bday")
     phone = data.get("phone")
@@ -35,6 +35,7 @@ def update_one(std_no) :
     
     except Exception as e :
         return jsonify(success = False, message=str(e))
+        
 
 
 

@@ -38,18 +38,6 @@ def add_one() :
 
 
 
-    # return jsonify({
-    #     "success": True,
-    #     "message": f"Add student {std_nm}'s information successfully.",
-    #     "data": {
-    #         "std_nm": std_nm,
-    #         "bday": bday,
-    #         "phone": phone,
-    #         "erol_dt": erol_dt
-    #     }
-    # })
-
-
 def get_new_std_no(cursor) :
     cursor.execute("""SELECT LPAD((COALESCE(MAX(std_no)::int, 0) + 1)::text, 5, '0') AS next_std_id
                       FROM bm_tbm_std;""")
